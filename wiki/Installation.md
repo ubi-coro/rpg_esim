@@ -1,13 +1,13 @@
----
-:grey_exclamation: **NOTE:**
-Please read [this guide](https://github.com/uzh-rpg/rpg_esim/wiki/Installation-(ROS-Melodic)) if you have to use ROS Melodic.
+> [!NOTE]
+>
+> Please read [this guide](Installation-(ROS-Melodic).md) if you have to use ROS Melodic.
 
 ---
 
 ## Installation
 
 If it is not installed on your system yet, please install [ROS](http://www.ros.org/). Installation instructions can be found [here](http://wiki.ros.org/kinetic/Installation/Ubuntu).
-We tested ESIM with Ubuntu 16.04 and ROS Kinetic. If you have to use ROS Melodic, some specific instructions can be found [here](https://github.com/uzh-rpg/rpg_esim/wiki/Installation-(ROS-Melodic)).
+We tested ESIM with Ubuntu 16.04 and ROS Kinetic. If you have to use ROS Melodic, some specific instructions can be found [here](Installation-(ROS-Melodic)).
 
 We recommend to create a new catkin workspace specifically for the simulator as follows:
     
@@ -73,8 +73,8 @@ In your `.bashrc` file, add the following line:
 
     alias ssim='source ~/setupeventsim.sh'
 
-From now on, typing `ssim` in a terminal will initialize the simulator workspace (you need to run `bash` first if you want to try this right after editing the `.bashrc` file.
+From now on, typing `ssim` in a terminal will initialize the simulator workspace (you need to run `bash` first if you want to try this right after editing the `.bashrc` file).
 
 ## Testing
 
-Congratulations! At this point you should be all set to try the simulator. Among the [multiple rendering engines available](https://github.com/uzh-rpg/rpg_esim/wiki), we recommend that you start with the [Planar Rendering Engine](https://github.com/uzh-rpg/rpg_esim/wiki/Planar-Renderer) to check that everything is up and running.
+Congratulations! At this point you should be all set to try the simulator. Among the [multiple rendering engines available](../README.md#Available-Rendering-Engines), we recommend that you start with the [Planar Rendering Engine](Planar-Renderer.md) to check that everything is up and running.

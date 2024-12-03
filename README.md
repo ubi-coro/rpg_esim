@@ -1,6 +1,6 @@
 # ESIM: an Open Event Camera Simulator
 
-[![ESIM: an Open Event Camera Simulator](http://rpg.ifi.uzh.ch/esim/img/youtube_preview.png)](https://youtu.be/ytKOIX_2clo)
+[<img src="http://rpg.ifi.uzh.ch/esim/img/youtube_preview.png" alt="ESIM: an Open Event Camera Simulator">](https://youtu.be/ytKOIX_2clo)
 
 This is the code for the 2018 CoRL paper **ESIM: an Open Event Camera Simulator** by [Henri Rebecq](http://henri.rebecq.fr), [Daniel Gehrig](https://danielgehrig18.github.io/) and [Davide Scaramuzza](http://rpg.ifi.uzh.ch/people_scaramuzza.html):
 
@@ -14,7 +14,9 @@ This is the code for the 2018 CoRL paper **ESIM: an Open Event Camera Simulator*
 }
 ```
 
-If you use any of this code, please cite this publication.
+> [!NOTE]
+> 
+> If you use any of this code, please cite this publication.
 
 ## Python Bindings
 
@@ -33,3 +35,29 @@ We now also support GPU support for fully parallel event generation!
 - Basic noise simulation for event cameras (based on additive Gaussian noise on the contrast threshold)
 - Motion blur simulation
 - Publish to ROS and/or save data to rosbag
+
+# Getting Started
+
+* [Installation instructions](./wiki/Installation.md)
+* [Installation (ROS-Melodic)](./wiki/Installation-(ROS-Melodic).md)
+* [Installation with DistroBox](./wiki/INSTALLING_ESIM.md)
+
+## Tutorials
+
+- [Simulating events from a video](./wiki/Simulating-events-from-a-video.md)
+
+### Advanced
+
+- [Writing your own publisher](./wiki/Writing-your-own-publisher.md)
+
+# Available Rendering Engines
+
+Below is a table summarizing the different rendering engines available to date, with their respective properties.
+
+| | Dimension | IMU | Moving Objects | Camera Distortion | Simulation speed |
+|-|-|-|-|-|-|
+| [MultiObjects2D](./wiki/Multi-Objects-2D-renderer) | 2D | No | Yes | No | ▓▓▓░░ |
+| [PanoramicRenderer](./wiki/Panoramic-Renderer) | 2D (rotation only) | Yes | No | Yes | ▓▓▓▓░ |
+| [PlanarRenderer](./wiki/Planar-Renderer) | 2.5D (planar) | Yes | No | Yes | ▓▓▓▓░ |
+| [OpenGLRenderer](./wiki/3D-OpenGL-Rendering-Engine) | 3D | Yes | Yes | No | ▓▓▓▓▓ |
+| [UnrealCVRenderer](./wiki/Photorealistic-Rendering-Engine-based-on-Unreal-Engine) | 3D | Yes | No | No | ▓░░░░ |
