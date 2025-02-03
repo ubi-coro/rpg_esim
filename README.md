@@ -56,8 +56,8 @@ Below is a table summarizing the different rendering engines available to date, 
 
 | | Dimension | IMU | Moving Objects | Camera Distortion | Simulation speed |
 |-|-|-|-|-|-|
-| [MultiObjects2D](./wiki/Multi-Objects-2D-renderer) | 2D | No | Yes | No | ▓▓▓░░ |
-| [PanoramicRenderer](./wiki/Panoramic-Renderer) | 2D (rotation only) | Yes | No | Yes | ▓▓▓▓░ |
-| [PlanarRenderer](./wiki/Planar-Renderer) | 2.5D (planar) | Yes | No | Yes | ▓▓▓▓░ |
-| [OpenGLRenderer](./wiki/3D-OpenGL-Rendering-Engine) | 3D | Yes | Yes | No | ▓▓▓▓▓ |
-| [UnrealCVRenderer](./wiki/Photorealistic-Rendering-Engine-based-on-Unreal-Engine) | 3D | Yes | No | No | ▓░░░░ |
+| [MultiObjects2D](./wiki/Multi-Objects-2D-renderer) | 2D | No | Yes | No | ![60%](https://progress-bar.xyz/60) |
+| [PanoramicRenderer](./wiki/Panoramic-Renderer) | 2D (rotation only) | Yes | No | Yes | ![80%](https://progress-bar.xyz/80) |
+| [PlanarRenderer](./wiki/Planar-Renderer) | 2.5D (planar) | Yes | No | Yes | ![80%](https://progress-bar.xyz/80) |
+| [OpenGLRenderer](./wiki/3D-OpenGL-Rendering-Engine) | 3D | Yes | Yes | No | ![100%](https://progress-bar.xyz/100) |
+| [UnrealCVRenderer](./wiki/Photorealistic-Rendering-Engine-based-on-Unreal-Engine) | 3D | Yes | No | No | ![20%](https://progress-bar.xyz/20) |
